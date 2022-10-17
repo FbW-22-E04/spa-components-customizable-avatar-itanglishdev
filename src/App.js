@@ -1,16 +1,9 @@
 import './App.css';
 import Avatar from './components/Avatar';
-import { useState } from 'react'
 
 function App() {
 
-  // const [size, setSize] = useState(typesOfSize[1])
-  // const [shape, setShape] = useState(typeOfShape[0])
-
-  // const typesOfSize = [
-  const s = 'w-[30px] h-[30px]', m = 'w-[60px] h-[60px]', l = 'w-[120px] h-[120px]', xl = 'w-[200px] h-[200px]'
-
-
+  const s = 'w-[30px] h-[30px] align-middle', m = 'w-[60px] h-[60px] align-middle', l = 'w-[120px] h-[120px] align-middle', xl = 'w-[200px] h-[200px] align-middle'
   const square = 'border', rounded = 'rounded-lg', circle = 'rounded-full'
 
   return (
@@ -33,7 +26,7 @@ function App() {
         <p>type circle</p>
       </div>
       <div>
-        <Avatar size={m} shape='border' />
+        <Avatar size={m} shape={square} />
         <p>size m</p>
         <p>type square</p>
       </div>
@@ -48,7 +41,7 @@ function App() {
         <p>type circle</p>
       </div>
       <div>
-        <Avatar size={l} shape='border' />
+        <Avatar size={l} shape={square} />
         <p>size s</p>
         <p>type square</p>
       </div>
@@ -58,7 +51,7 @@ function App() {
         <p>type rounded</p>
       </div>
       <div>
-        <Avatar size={l} shape='rounded-full' />
+        <Avatar size={l} shape={circle} />
         <p>size s</p>
         <p>type circle</p>
       </div>
